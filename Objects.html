@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Utilizando Objetos</title>
+        <script>
+            var cidade = {
+                descricao : "Fortaleza",
+                estado : "CE",
+                regiao : "Nordeste"
+            }
+            
+            var cidades = [];
+            cidades.push(cidade);
+            console.log(cidades);
+            
+           
+            
+            function getCidade(){
+                document.getElementById("cidade").value = cidades[0].descricao;
+                
+                document.getElementById("estado").value = cidades[0].estado;
+            }
+            
+        </script>
+    
+    </head>
+    
+    <body onload="getCidade()">
+       
+        <p><b>Cidades:</b></p><br/>
+
+        
+        <textarea rows="10" id="estado" >
+            
+        </textarea>
+        
+        <select id="cidade">
+           
+        </select>
+    
+    </body>
+    
+</html>
+    
