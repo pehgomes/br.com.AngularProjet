@@ -1,0 +1,16 @@
+<html ng-app ng-init=" pessoa = {nome:'Pedro Henrique Gomes'} ">
+    <heade>
+        <title>Curso Angular js</title>
+        <script src="js/angular.min.js"></script>
+    </heade>
+
+    <body>
+    Bem vindo : {{pessoa.nome}}
+        <br/>
+        <input type="text" ng-model="pessoa.nome"/><br/>
+
+        <textarea style="width: 200px !important; height: 200px !important;" >
+        {{ pessoa.nome }}
+        </textarea>
+    </body>
+</html>
