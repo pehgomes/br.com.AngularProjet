@@ -1,0 +1,55 @@
+<html ng-app="app">
+    <head>
+        <title></title>
+    </head>
+    
+    <body ng-controller="aula08Controller">
+    
+        
+        <form novalidate>
+            <p>
+                Nome: <input type="text"
+                ng-model="pessoa.nome"               
+                >
+            </p>
+            <p>
+                E-mail: <input type="email"
+                ng-model="pessoa.email"
+                               >
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" value="m" ng-model="pessoa.sexo">Masculino 
+                <input type="radio" value="f"
+                 ng-model="pessoa.sexo">Feminino
+            
+            </p>
+            
+            <p>
+                <select ng-model="pessoa.estado" >
+                    <option ng-repeat="estado in estados" value="{{ estado }}"
+                    ng-selected="estado==pessoa.estado">
+                        {{ estado }}
+                    </option>
+                </select>
+            </p>
+            
+            <p>
+                <input type="submit" value="salvar">
+                <input type="submit" value="resetar">
+            </p>    
+            <pre>
+            {{ pessoa | json}}
+            </pre>
+            
+        </form>
+        
+        <script src="js/angular/angular.min.js"></script>
+        <script src="js/app.module.js"></script>
+        
+        
+        <!--Controllers-->
+        <script src="js/learn08Controller.js"></script>
+        
+    </body>
+</html>

@@ -21,7 +21,7 @@ app.controller('aula07Controller',function($scope){
     }
     
     $scope.limpar = function(){
-        $scope.pessoas.removeAll;
+        $scope.pessoas.
     }
     
 });
