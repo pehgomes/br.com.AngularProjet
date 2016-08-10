@@ -2,7 +2,7 @@
 
         $scope.estados = ['CE','PB','PE'];
 
-        $scope.pessoa = novaPessoa();
+      
 
 
     });
