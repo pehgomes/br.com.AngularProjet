@@ -8,6 +8,5 @@
         Hello World!<br/>
         <input type="text" ng-model="var"/>
         {{ var }}
-	{{var }}
     </body>
 </html>
